@@ -9,6 +9,7 @@ body {
   transform: scale(0.9);
 }
 
+
 /* flower1 */
 .flower1 {
   --fl-speed: 0.8s;
@@ -471,4 +472,39 @@ body {
   100% {
     transform: translate(110vw, 20vh);
   }
+}
+
+.left-buttons,
+.right-buttons {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.left-buttons {
+  left: 150px;
+}
+
+.right-buttons {
+  right: 150px;
+}
+
+.flower-button {
+  display: block;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.flower-button:hover {
+  background-color: #d4d5d6;
 }
